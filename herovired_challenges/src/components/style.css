@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: my-font1;
+    src: url(MainluxLight-DOAJx.otf);
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e22d2c;
+    color: #fff;
+    font-family: 'my-font1';
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 50px;
+    position: fixed;
+}
+.left{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-evenly;
+}
+.right{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: space-evenly;
+}
+.link{
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(231, 231, 231)
+}
+
