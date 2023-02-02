@@ -1,0 +1,66 @@
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.tbl-header {
+    background-color: rgba(83, 83, 83, 0.3);
+    border: 1px solid #0ed48b;
+    border-bottom: none;
+}
+
+.tbl-content {
+
+    overflow-x: auto;
+    margin-top: 0px;
+    border: 1px solid #0ed48b;
+    border-bottom: none;
+}
+
+th {
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 100;
+    font-size: 16px;
+    color: #fff;
+    border-bottom: 1px solid #0ed48b;
+}
+
+@font-face {
+    font-family: my-font1;
+    src: url(MainluxLight-DOAJx.otf);
+}
+
+body {
+    font-family: 'my-font1';
+}
+
+section {
+    margin: 50px;
+}
+
+
+
+/* for custom scrollbar for webkit browser*/
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}

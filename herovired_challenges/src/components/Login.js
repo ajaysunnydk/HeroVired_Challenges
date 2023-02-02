@@ -5,11 +5,12 @@ import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
+import { useNavigate } from 'react-router-dom';
 import './style.css'
 
 
-
 export default function SignIn(props) {
+    const navigate = useNavigate();
     const handleSubmit = (event) => {
         event.preventDefault();
         const data = new FormData(event.currentTarget);
@@ -17,6 +18,7 @@ export default function SignIn(props) {
             email: data.get('email'),
             password: data.get('password'),
         });
+        navigate('/');
     };
 
 

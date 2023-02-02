@@ -1,6 +1,8 @@
 import './style.css'
-function Header() {
+
+function ProwessHome() {
     return (
+        <>
         <nav className="navbar">
             <div className="left">
                 <a href='#' className='main-logo'><h2 className="heading">Prowess Devops</h2></a>
@@ -9,12 +11,13 @@ function Header() {
                 <a href="/" class="link">Challenges</a>
             </div>
             <div className="right">
-                {/* <a href="#" className="link">Notifications</a>
-                <a href="#" className="link">Profile</a>
-                <a href="#" class="link">Settings</a> */}
-                <a href="/login" class="link">Logout</a>
+                <a href="/login" class="link">Login</a>
             </div>
         </nav>
+        <div>
+            <h1 className="main-title">Prowess Soft</h1>
+        </div>
+        </>
     )
 }
-export default Header;
+export default ProwessHome

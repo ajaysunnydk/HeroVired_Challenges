@@ -26,6 +26,13 @@
     right: 0;
 }
 
+.main-logo{
+    text-decoration: none;
+    color: rgb(0, 36, 98);
+}
+.main-title{
+    padding-top: 80px;
+}
 .left {
     display: flex;
     align-items: center;
@@ -37,13 +44,14 @@
     display: flex;
     align-items: center;
     width: 30%;
-    justify-content: space-evenly;
+    justify-content: flex-end;
 }
 
 .link {
-    font-size: 14px;
+    font-size: 15px;
     text-decoration: none;
-    color: rgb(15, 14, 14)
+    color: rgb(14, 13, 13);
+    font-weight: bold;
 }
 
 .card {

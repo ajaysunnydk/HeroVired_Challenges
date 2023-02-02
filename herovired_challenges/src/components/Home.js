@@ -2,7 +2,7 @@ import '../App.css'
 import './style.css'
 import ChallengeCard from './ChallengeCard'
 import Header from "./Header"
-import { useState,useEffect } from 'react';
+import { useState } from 'react';
 import Popup from './Popup';
 
 
