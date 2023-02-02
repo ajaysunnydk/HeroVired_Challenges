@@ -1,40 +1,121 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 @font-face {
     font-family: my-font1;
     src: url(MainluxLight-DOAJx.otf);
 }
-.navbar{
+
+.navbar {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #e22d2c;
-    color: #fff;
+    background-color: #eaec96;
+    color: black;
     font-family: 'my-font1';
     padding-left: 5%;
     padding-right: 5%;
     height: 50px;
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
-.left{
+
+.left {
     display: flex;
     align-items: center;
     width: 50%;
     justify-content: space-evenly;
 }
-.right{
+
+.right {
     display: flex;
     align-items: center;
     width: 30%;
     justify-content: space-evenly;
 }
-.link{
+
+.link {
     font-size: 14px;
     text-decoration: none;
-    color: rgb(231, 231, 231)
+    color: rgb(15, 14, 14)
 }
 
+.card {
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid #0ed48b;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    height: 100px;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 225px;
+    will-change: transform;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.card:disabled {
+    pointer-events: none;
+}
+
+.card:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.card:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+
+.cards-ctn {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 11px;
+    flex-wrap: wrap;
+}
+
+.technology {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-left: 100px;
+    margin-top: 20px;
+    gap: 20px
+}
+.tech-title{
+    color: #0ed48b;
+    font-family: my-font1;
+}
+p{
+    color: rgb(179, 178, 178);
+}

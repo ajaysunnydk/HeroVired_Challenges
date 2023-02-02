@@ -1,17 +1,24 @@
 import './App.css';
-import Header from './components/Header';
-import Technology from './components/Technology';
 
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import SignIn from './components/Login';
+import HeaderHome from './components/HeaderHome';
+import SignUp from './components/SignUp';
+import Home from './components/Home';
+
+const technologies = ["Programming", "Linux"]
 function App() {
   return (
     <div className="App">
-      <Header></Header>
-      <div className="content-ctn">
-        <h1>Challenges</h1>
-        <div className="cards-body">
-          <Technology techTitle="Programming" ></Technology>
-        </div>
-      </div>
+      <HeaderHome></HeaderHome>
+    
+      <BrowserRouter>
+        <Routes>
+          <Route path='/login' element={<SignIn></SignIn>}></Route>
+          <Route path='/signup' element={<SignUp></SignUp>}></Route>
+          <Route path='/' element={<Home></Home>}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
