@@ -5,6 +5,7 @@ import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
+import './style.css'
 
 
 
@@ -35,6 +36,7 @@ export default function SignIn(props) {
             >
                 <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
                     <TextField
+                        InputProps={{ inputProps: { style: { color: '#fff' } } }}
                         margin="normal"
                         required
                         fullWidth
@@ -45,6 +47,7 @@ export default function SignIn(props) {
                         autoFocus
                     />
                     <TextField
+                        InputProps={{ inputProps: { style: { color: '#fff' } } }}
                         margin="normal"
                         required
                         fullWidth

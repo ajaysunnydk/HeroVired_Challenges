@@ -39,6 +39,7 @@ export default function SignUp() {
             <Grid container spacing={2}>
               <Grid item xs={12} sm={6}>
                 <TextField
+                InputProps={{ inputProps: { style: { color: '#fff' } } }}
                   autoComplete="given-name"
                   name="firstName"
                   required
@@ -50,6 +51,7 @@ export default function SignUp() {
               </Grid>
               <Grid item xs={12} sm={6}>
                 <TextField
+                InputProps={{ inputProps: { style: { color: '#fff' } } }}
                   required
                   fullWidth
                   id="lastName"
@@ -60,6 +62,7 @@ export default function SignUp() {
               </Grid>
               <Grid item xs={12}>
                 <TextField
+                InputProps={{ inputProps: { style: { color: '#fff' } } }}
                   required
                   fullWidth
                   id="email"
@@ -70,6 +73,7 @@ export default function SignUp() {
               </Grid>
               <Grid item xs={12}>
                 <TextField
+                InputProps={{ inputProps: { style: { color: '#fff' } } }}
                   required
                   fullWidth
                   name="password"

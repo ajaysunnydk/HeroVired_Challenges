@@ -119,3 +119,6 @@
 p{
     color: rgb(179, 178, 178);
 }
+.MuiFormLabel-root {
+    color: rgb(132, 129, 129) !important;
+  }
