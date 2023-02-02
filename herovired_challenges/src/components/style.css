@@ -26,13 +26,15 @@
     right: 0;
 }
 
-.main-logo{
+.main-logo {
     text-decoration: none;
     color: rgb(0, 36, 98);
 }
-.main-title{
+
+.main-title {
     padding-top: 80px;
 }
+
 .left {
     display: flex;
     align-items: center;
@@ -120,13 +122,24 @@
     margin-top: 20px;
     gap: 20px
 }
-.tech-title{
+
+.tech-title {
     color: #0ed48b;
     font-family: my-font1;
 }
-p{
+
+p {
     color: rgb(179, 178, 178);
 }
+
+.para {
+    padding-top: 150px;
+    font-size: 72px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .MuiFormLabel-root {
     color: rgb(132, 129, 129) !important;
-  }
+}
